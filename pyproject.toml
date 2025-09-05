@@ -16,6 +16,7 @@ pyorient = "^1.5.5"
 typedb-driver = "^2.28.4"
 terminusdb-client = "^10.0.0"
 google-cloud-spanner = "^3.56.0"
+pymgclient = "^1.5.1"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  memgraph:
+    image: memgraph/memgraph:latest
+    container_name: memgraph
+    ports:
+      - "7687:7687"
+      - "7444:7444"
+    volumes:
+      - memgraph_data:/var/lib/memgraph
+    command: ["--memory-limit=8192"]  # Set memory limit to 8 GiB
+    restart: unless-stopped
+
+volumes:
+  memgraph_data:
