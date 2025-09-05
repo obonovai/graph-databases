@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "graph-databases"
+version = "0.1.0"
+description = ""
+authors = ["Ivona Oboňová <ivonaobonova@gmail.com>"]
+packages = [{include="*", from="src"}]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.3.1"
+# Graph Database Drivers
+neo4j = "^5.23.0"
+python-arango-async = "^1.0.2"
+pyorient = "^1.5.5"
+typedb-driver = "^2.28.4"
+terminusdb-client = "^10.0.0"
+google-cloud-spanner = "^3.56.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
